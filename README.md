@@ -10,7 +10,7 @@ kirara-kirara2openApi/
 ├── docker-compose.yml
 ├── requirements.txt
 ├── app.py
-└── logs/                   # 这个目录会自动创建
+└── logs/                   // 这个目录会自动创建
 
 
 
