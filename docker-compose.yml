@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  kirara-proxy:
+    build: .
+    container_name: kirara-proxy
+    ports:
+      - "10019:8081"
+    environment:
+      - FLASK_ENV=production
+      - KIRARA_BASE_URL=http://kirara-agent:8080
+      - KIRARA_API_KEY=Why343949
+      - PORT=8081
+    restart: unless-stopped
+    volumes:
+      - ./logs:/app/logs
+    networks:
+      - 1panel-network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8081/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+networks:
+  1panel-network:
+    external: true
