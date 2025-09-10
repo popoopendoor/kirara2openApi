@@ -6,11 +6,17 @@
 文件结构
 
 kirara-kirara2openApi/
+
 ├── Dockerfile
+
 ├── docker-compose.yml
+
 ├── requirements.txt
+
 ├── app.py
-└── logs/                   // 这个目录会自动创建
+
+└── logs/
+// logs这个目录会自动创建
 
 
 
