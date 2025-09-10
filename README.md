@@ -20,18 +20,16 @@ cd kirara2openApi
 # 构建并启动服务
 docker-compose up -d
 
-<BASH>
-# 查看运行状态
-docker-compose ps
+
  
 # 查看日志
 docker-compose logs -f kirara2openApi
 
-<BASH>
+
 # 停止服务
 docker-compose down
 
-<BASH>
+
 # 重启服务
 docker-compose restart
  
@@ -39,6 +37,6 @@ docker-compose restart
 docker-compose up -d --build
 
 
-<BASH>
+
 # 检查健康状态
 curl http://localhost:8081/health
