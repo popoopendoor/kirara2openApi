@@ -11,9 +11,11 @@ kirara-proxy/
 └── logs/                   # 这个目录会自动创建
 
 
+
+# 前提
 修改docker-compose.yaml中的 KIRARA_BASE_URL=你的kirara-agent地址
 
-<BASH>
+
 # 进入项目目录
 cd kirara2openApi
  
