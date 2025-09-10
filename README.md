@@ -1,5 +1,5 @@
 # kirara2openApi
-将kirara http api 转换成open api的python脚本
+将kirara http api 转换成open api
 
 将脚本下载到服务器
 
@@ -22,7 +22,7 @@ kirara-kirara2openApi/
 
 # 前提
 修改docker-compose.yml中的 KIRARA_BASE_URL=你的kirara-agent地址
-
+再kirara中创建http api，将apikey写入docker-compose.yml中的 KIRARA_API_KEY=你的key
 
 # 进入项目目录
 cd kirara2openApi
