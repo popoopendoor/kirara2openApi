@@ -9,7 +9,7 @@ services:
     environment:
       - FLASK_ENV=production
       - KIRARA_BASE_URL=http://kirara-agent:8080
-      - KIRARA_API_KEY=Why343949
+      - KIRARA_API_KEY=sk-123123112233
       - PORT=8081
     restart: unless-stopped
     volumes:
